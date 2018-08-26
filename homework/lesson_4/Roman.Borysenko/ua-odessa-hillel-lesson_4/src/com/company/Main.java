@@ -41,7 +41,8 @@ public class Main {
         }
         System.out.println(Integer.parseInt(args[3]));
         System.out.println("Из 2 чисел: " + a3 +  " " + a4 + " ближе: "  + getValueCloseTo10(a3,a4));
-        System.out.println("стоимость квартиры за " + args[5] + " дней составляет: " + setCash(Integer.parseInt(args[5])) + " грн.");
+        System.out.println("стоимость квартиры за " + args[5] + " дней составляет: "
+        + setCash(Integer.parseInt(args[5])) + " грн.");
     }
 
 
