@@ -20,6 +20,9 @@ public class Main {
         System.out.println();
         System.out.print("The cost rent from apartment for 8 days: ");
         System.out.println(costRentApartm(8));
+        System.out.println();
+        System.out.print("When args[0] % args[1](" + args[0] + " % " + args[1] + ")" + " :");
+        System.out.println(checkDivision(args[0], args[1]));
 
     }
 
@@ -115,26 +118,34 @@ public class Main {
         return res;
     }
 
-    static int costRentApartm(int day){
+    static int costRentApartm(int day) {
         int costRent = 40;
         int discMoreFive = 20;
         int discMoreSeven = 50;
         int reslRent = 0;
 
-        if(day <= 5){
+        if (day <= 5) {
             reslRent = costRent * day;
         }
-        if(day > 5){
+        if (day > 5) {
             reslRent = costRent * day;
             reslRent = reslRent - discMoreFive;
         }
-        if(day > 7){
+        if (day > 7) {
             reslRent = costRent * day;
             reslRent = reslRent - discMoreSeven;
         }
         return reslRent;
     }
 
-
+    static String checkDivision(String val1, String val2) {
+        String resl = "";
+        if ((Integer.valueOf(val1) % Integer.valueOf(val2) == 0)) {
+            resl = "At division is no remainder";
+        } else {
+            resl = "At division is a remainder";
+        }
+        return resl;
+    }
 }
 
