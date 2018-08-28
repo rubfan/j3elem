@@ -12,8 +12,10 @@ public class Task_3to7{
 					break;
 				case 6: nearestTo10(Integer.parseInt(args[1]), Integer.parseInt(args[2]));
 					break;
-//				case 7:
+				case 7: flat (Integer.parseInt(args[1]));
+					break;
 				default: System.out.println("ERROR. Check the value (from 3 to 7)");
+					break;
 			}
 
 		}catch(Exception e){
@@ -63,5 +65,17 @@ public class Task_3to7{
 			}else{
 				System.out.println(vol1 + " = " + vol2);
 			     }
+	}
+	private static void flat(int numberOfDays){
+		int payPerDay = 40;
+		int discount = 0;
+			if ((numberOfDays > 5)&(numberOfDays <= 7)){
+				discount = 20;
+                        }if (numberOfDays > 7){
+				discount = 50;
+			}
+		int summ = (numberOfDays*payPerDay) - discount;
+			System.out.println("Amount of money to pay is: " + summ + " UAH.");
+
 	}
 } 
