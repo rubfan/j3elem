@@ -1,4 +1,13 @@
+/**
+ * @author DemianSH
+ * This is Main class for the hometasks after lessons_4
+ */
+
 public class Main {
+    /**
+     * Here start point of the programm
+     * @param args inputs from Idea args[0] = -10; args[1] = 11; args[2] = -10;
+     */
     public static void main(String[] args) {
 
         System.out.println("Value args[]: args[0]=" + args[0] + ", args[1]=" + args[1] + ", args[2]=" + args[2]);
@@ -26,7 +35,13 @@ public class Main {
 
     }
 
-
+    /**
+     * This method whith hepl of operator "if" and logic operators find minimal value of args[]
+     * @param val1 = -10;
+     * @param val2 = 11;
+     * @param val3 = -10;
+     * @return minimal value
+     */
     static String minValue(String val1, String val2, String val3) {
         String resl = "";
         if (Integer.valueOf(val1) <= Integer.valueOf(val2) && Integer.valueOf(val1) <= Integer.valueOf(val3)) {
@@ -41,6 +56,13 @@ public class Main {
         return resl;
     }
 
+    /**
+     * This method whith help of operator "if" and logic operators find maximal value args[]
+     * @param val1 = -10;
+     * @param val2 = 11;
+     * @param val3 = -10;
+     * @return maximal value
+     */
     static String maxValue(String val1, String val2, String val3) {
         String resl = "";
         if (Integer.valueOf(val1) >= Integer.valueOf(val2) && Integer.valueOf(val1) >= Integer.valueOf(val3)) {
@@ -55,6 +77,13 @@ public class Main {
         return resl;
     }
 
+    /**
+     * This method find minimal values args[] and view everyone repeat if they meet
+     * @param val1
+     * @param val2
+     * @param val3
+     * @return
+     */
     static String repeatMinValue(String val1, String val2, String val3) {
         String resl = "";
         String rept = "";
@@ -92,6 +121,11 @@ public class Main {
         return resl;
     }
 
+    /**
+     * This method check input value and output conclusion about value ( even or odd)
+     * @param val
+     * @return
+     */
     static String evenOrOdd(String val) {
         String res = "";
         if ((Integer.valueOf(val) % 2) == 0) {
@@ -102,6 +136,12 @@ public class Main {
         return res;
     }
 
+    /**
+     * This method define what of two values closer to ten
+     * @param val1
+     * @param val2
+     * @return
+     */
     static String closerToTen(String val1, String val2) {
         int value1 = 10 - Integer.valueOf(val1);
         int value2 = 10 - Integer.valueOf(val2);
@@ -118,6 +158,14 @@ public class Main {
         return res;
     }
 
+    /**
+     * This method define the cost rent apartment from input days
+     * if the cost rent apartment is 40 UAH
+     * if use apartment more 5 days discount is 20 UAH
+     * if use apartment more 7 days discount is 50 UAH
+     * @param day
+     * @return
+     */
     static int costRentApartm(int day) {
         int costRent = 40;
         int discMoreFive = 20;
@@ -138,6 +186,12 @@ public class Main {
         return reslRent;
     }
 
+    /**
+     * This method define remainder after division 
+     * @param val1
+     * @param val2
+     * @return
+     */
     static String checkDivision(String val1, String val2) {
         String resl = "";
         if ((Integer.valueOf(val1) % Integer.valueOf(val2) == 0)) {
