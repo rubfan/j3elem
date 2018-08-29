@@ -1,6 +1,6 @@
-public class HWLesson4{
+public class HomeworkLesson4{
     public static void main(String[] args) {
-        HWLesson4 taskSolution = new HWLesson4();
+        HomeworkLesson4 taskSolution = new HomeworkLesson4();
         String argum[] = {args[0], args[1], args[2]};
         taskSolution.findMin(argum);
         taskSolution.findMinMax(argum);
