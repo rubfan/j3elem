@@ -73,9 +73,11 @@ public class Main {
 
         numberRes = number1 % number2;
         if (numberRes == 0) {
-            System.out.println("Число " + number1 + " и число " + number2 + " \nрезулльтат без остатка " + "(" + numberRes + ")");
+            System.out.println("Число " + number1 + " и число " + number2 + " " +
+                    "\nрезулльтат без остатка " + "(" + numberRes + ")");
         } else {
-            System.out.println("Число " + number1 + " и число " + number2 + " \nрезулльтат с остатком " + "(" + numberRes + ")");
+            System.out.println("Число " + number1 + " и число " + number2 +
+                    " \nрезулльтат с остатком " + "(" + numberRes + ")");
         }
 
         System.out.println("\n------------");
@@ -99,6 +101,7 @@ public class Main {
         if (var1 == var2) {
             System.out.println("Числа одинаковые");
         }
+
 
         System.out.println("\n------------");
 
