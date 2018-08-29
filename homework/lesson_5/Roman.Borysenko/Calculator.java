@@ -110,4 +110,3 @@ public class Calculator {
         return Math.abs(a);
     }
 }
-
