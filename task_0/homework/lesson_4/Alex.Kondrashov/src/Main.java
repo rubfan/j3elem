@@ -142,7 +142,8 @@ public class Main {
                     "\nцена в сутки: " + "\t\t" + costAptForOneDay + " UAH" +
                     "\nскидка в размере " + "\t" + saleLessFiveDays + " UAH" +
                     "\n---" +
-                    "\nИтого \t\t\t\t" + totalAmount + " UAH");
+                    "\nИтого \t\t\t\t" + totalAmount +
+                    " UAH");
         }
 
     }
