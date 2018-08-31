@@ -168,17 +168,31 @@ public class Main {
         return mas;
     }
 
-    static Integer getLuckyTicket(Integer a) {
+    static Integer getLuckyTicket(Integer t) {
 
         String str;
-        Integer sum1,sum2,f;
+        Integer sum1,sum2,f, a, b, c;
         f = null;
-        str = a.toString();
-        sum1 = Integer.parseInt(str.substring(0,1)) + Integer.parseInt(str.substring(1,2)) + Integer.parseInt(str.substring(2,3));
-        sum2 = Integer.parseInt(str.substring(3,4)) + Integer.parseInt(str.substring(4,5)) + Integer.parseInt(str.substring(5,6));
+        str = t.toString();
+        a = getValue(str,0,1);
+        b = getValue(str,1,2);
+        c = getValue(str,2,3);
+        sum1 = a + b + c;
+        a = getValue(str,3,4);
+        b = getValue(str,4,5);
+        c = getValue(str,5,6);
+        sum2 = a + b + c;
         if( sum1 == sum2) {
             f = a;
         }
+
+        return f;
+    }
+
+    static Integer getValue(String str, int a,int b) {
+
+        Integer f;
+        f = Integer.parseInt(str.substring(a,b));
 
         return f;
     }
