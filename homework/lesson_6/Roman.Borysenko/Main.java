@@ -171,7 +171,7 @@ public class Main {
     static Integer getLuckyTicket(Integer t) {
 
         String str;
-        Integer sum1,sum2,f, a, b, c;
+        Integer sum1, sum2, f, a, b, c;
         f = null;
         str = t.toString();
         a = getValue(str,0,1);
