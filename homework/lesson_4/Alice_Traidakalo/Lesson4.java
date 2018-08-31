@@ -14,16 +14,13 @@ public class Lesson4 {
     }
         private static int task1(int a, int b, int c) {
         int min = 0;
-            if(a < b && a < c)
-            {
+            if(a < b && a < c) {
                 min = a;
             }
-            else if(b < c && b < a)
-            {
+            else if(b < c && b < a) {
                 min = b;
             }
-            else
-                {
+            else {
                 min = c;
             }
             System.out.println("min task 1 = " + min);
@@ -65,16 +62,13 @@ public class Lesson4 {
 
          private static int task7 (int days) {
         int price = 40, discount5Days = 20, discount7Days = 50;
-        if(days <= 5)
-        {
+        if(days <= 5) {
             System.out.println("task 7: payment - " + (days * price));
         }
-        else if (days > 5 && days <= 7)
-        {
+        else if (days > 5 && days <= 7) {
             System.out.println("task 7: payment - " + (days * price - discount5Days));
         }
-        else if(days > 7)
-        {
+        else if(days > 7) {
             System.out.println("task 7: payment - " + (days * price - discount7Days));
         }
         return 0;
