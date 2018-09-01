@@ -32,6 +32,7 @@ public class Lesson4Homework {
             System.out.println("");
         }
     }
+
     private static int getMin(int[] integers){
         if (integers[0] <= integers[1] && integers[0] <= integers[2]){
             return integers[0];
@@ -41,6 +42,7 @@ public class Lesson4Homework {
         }
         return integers[2];
     }
+
     private static int getMax(int[] integers){
         if (integers[0] >= integers[1] && integers[0] >= integers[2]){
             return integers[0];
@@ -50,6 +52,7 @@ public class Lesson4Homework {
         }
         return integers[2];
     }
+
     private static int[] getDigits(){
         Scanner input = new Scanner(System.in);
         int[] integers = new int[3];
@@ -64,6 +67,7 @@ public class Lesson4Homework {
         integers[2] =Integer.parseInt(Input);
         return integers;
     }
+
     private static void MinFromThreeAll(){
         int[] integers = getDigits();
         if (integers[0] < integers[1] && integers[0] < integers[2]){
@@ -88,15 +92,18 @@ public class Lesson4Homework {
             System.out.println("Все числа одинаковые");
         }
     }
+
     private static void MinFromThree() {
         int[] integers = getDigits();
         System.out.println("Минимальное число: " +getMin(integers));
     }
+
     private static void MinAndMax() {
         int[] integers = getDigits();
         System.out.println("Минимальное число: " +getMin(integers));
         System.out.println("Максимальное число: " +getMax(integers));
     }
+
     private static void modulus2() {
         Scanner input = new Scanner(System.in);
         System.out.print("Введите число: ");
@@ -106,6 +113,7 @@ public class Lesson4Homework {
             System.out.println("Четное");
         else System.out.println("Нечетное");
     }
+
     private static void modulus() {
         int[] integers = new int[2];
         Scanner input = new Scanner(System.in);
@@ -119,6 +127,7 @@ public class Lesson4Homework {
             System.out.println("Делится без остатка");
         else System.out.println("Не делится без остатка");
     }
+
     private static void closeTo() {
         int[] integers = new int[2];
         Scanner input = new Scanner(System.in);
@@ -135,6 +144,7 @@ public class Lesson4Homework {
         if (10 - integers[0] == 10 - integers[1])
             System.out.println("Числа одинаково близки");
     }
+
     private static void rent() {
         Scanner input = new Scanner(System.in);
         System.out.print("Введите число дней: ");
