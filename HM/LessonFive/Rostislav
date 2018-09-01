@@ -23,109 +23,108 @@ public class LessonFive {
                 System.out.println("Result: ");
                 System.out.println(firstArgs + "+" + secondArgs + " = " + (firstArgs + secondArgs));
             }
-				if (mass[0] == '-') {
-					firstArgs = Integer.valueOf(args[1]);
-					secondArgs = Integer.valueOf(args[2]);
-					System.out.println("Result: ");
-					System.out.println(firstArgs + "-" + secondArgs + " = " + (firstArgs - secondArgs));
-				}
-					if (mass[0] == '*') {
-						firstArgs = Integer.valueOf(args[1]);
-						secondArgs = Integer.valueOf(args[2]);
-						System.out.println("Result: ");
-						System.out.println(firstArgs + "*" + secondArgs + " = " + (firstArgs * secondArgs));
-					}
-						if (mass[0] == '/') {
-							firstArgs = Integer.valueOf(args[1]);
-							secondArgs = Integer.valueOf(args[2]);
-							System.out.println("Result: ");
-							System.out.println(firstArgs + "/" + secondArgs + " = " + (firstArgs / secondArgs));
-						}
-							if (mass[0] == '%') {
-								firstArgs = Integer.valueOf(args[1]);
-								secondArgs = Integer.valueOf(args[2]);
-								System.out.println("Result: ");
-								System.out.println(firstArgs + "%" + secondArgs + " = " + (firstArgs % secondArgs));
-							}
-								if (mass[0] == '#') {
-								firstArgs = Integer.valueOf(args[1]);
-								System.out.println("Result: " + Math.abs(firstArgs));
-								}
-									if (mass[0]== '$') {
-										System.out.println("Your summ is: ");
-										firstArgs = Integer.valueOf(args[1]);
-										System.out.println(firstArgs);
-										System.out.println("Yor % is:");
-										secondArgs = Integer.valueOf(args[2]);
-										System.out.println(secondArgs);
-										Payment();
-										System.out.println();
-										System.out.println("Result: " + firstArgs + "+" + (firstArgs * (secondArgs / 100))+
+	    if (mass[0] == '-') {
+		firstArgs = Integer.valueOf(args[1]);
+		secondArgs = Integer.valueOf(args[2]);
+		System.out.println("Result: ");
+		System.out.println(firstArgs + "-" + secondArgs + " = " + (firstArgs - secondArgs));
+	    }
+            if (mass[0] == '*') {
+		firstArgs = Integer.valueOf(args[1]);
+		secondArgs = Integer.valueOf(args[2]);
+		System.out.println("Result: ");
+		System.out.println(firstArgs + "*" + secondArgs + " = " + (firstArgs * secondArgs));
+	    }
+	     if (mass[0] == '/') {
+		firstArgs = Integer.valueOf(args[1]);
+		secondArgs = Integer.valueOf(args[2]);
+		System.out.println("Result: ");
+		System.out.println(firstArgs + "/" + secondArgs + " = " + (firstArgs / secondArgs));
+	    }
+	     if (mass[0] == '%') {
+		firstArgs = Integer.valueOf(args[1]);
+		secondArgs = Integer.valueOf(args[2]);
+		System.out.println("Result: ");
+		System.out.println(firstArgs + "%" + secondArgs + " = " + (firstArgs % secondArgs));
+	    }
+	     if (mass[0] == '#') {
+		firstArgs = Integer.valueOf(args[1]);
+		System.out.println("Result: " + Math.abs(firstArgs));
+	    }
+	     if (mass[0]== '$') {
+		System.out.println("Your summ is: ");
+		firstArgs = Integer.valueOf(args[1]);
+		System.out.println(firstArgs);
+		System.out.println("Yor % is:");
+		secondArgs = Integer.valueOf(args[2]);
+		System.out.println(secondArgs);
+		Payment();
+		System.out.println();
+		System.out.println("Result: " + firstArgs + "+" + (firstArgs * (secondArgs / 100))+
                     "="+((firstArgs * (secondArgs / 100))+firstArgs));
-									}
+	     }
 		} else if (args.length == 0) {
-            char symbolOfOperation = symb.next(".").charAt(0);
-				if (symbolOfOperation == '+') {
-					System.out.println("Enter first Value: ");
-					firstArgs = symb1.nextInt();
-					System.out.println("Enter second Value: ");
-					secondArgs = symb2.nextInt();
-					System.out.println("Result: ");
-					System.out.println(firstArgs + "+" + secondArgs + " = " + (firstArgs + secondArgs));
-				}
-					if (symbolOfOperation == '-') {
-						System.out.println("Enter first Value: ");
-						firstArgs = symb1.nextInt();
-						System.out.println("Enter second Value: ");
-						secondArgs = symb2.nextInt();
-						System.out.println("Result: ");
-						System.out.println(firstArgs + "-" + secondArgs + " = " + (firstArgs - secondArgs));
-					}
-						if (symbolOfOperation == '*') {
-							System.out.println("Enter first Value: ");
-							firstArgs = symb1.nextInt();
-							System.out.println("Enter second Value: ");
-							secondArgs = symb2.nextInt();
-							System.out.println("Result: ");
-							System.out.println(firstArgs + "*" + secondArgs + " = " + (firstArgs * secondArgs));
-						}
-							if (symbolOfOperation == '/') {
-								System.out.println("Enter first Value: ");
-								firstArgs = symb1.nextInt();
-								System.out.println("Enter second Value: ");
-								secondArgs = symb2.nextInt();
-								System.out.println("Result: ");
-								System.out.println(firstArgs + "/" + secondArgs + " = " + (firstArgs / secondArgs));
-							}
-								if (symbolOfOperation == '%') {
-									System.out.println("Enter first Value: ");
-									firstArgs = symb1.nextInt();
-									System.out.println("Enter second Value: ");
-									secondArgs = symb2.nextInt();
-									System.out.println("Result: ");
-									System.out.println(firstArgs + "%" + secondArgs + " = " + (firstArgs % secondArgs));
-								}
-									if (symbolOfOperation == '#') {
-										System.out.println("Enter your Value: ");
-										firstArgs = symb1.nextInt();
-										System.out.println("Result: " + Math.abs(firstArgs));
-									}
-										if (symbolOfOperation == '$') {
-										System.out.println("Enter your summ: ");
-										firstArgs = symb1.nextInt();
-										System.out.println("Choise how match u will pay for :");
-										Payment();
-										System.out.println("Enter your Value: ");
-										secondArgs = symb1.nextInt();
-										System.out.println("Result: " + firstArgs + "+" + (firstArgs * (secondArgs / 100))+
-                    "="+((firstArgs * (secondArgs / 100))+firstArgs));
-										}
+            	  char symbolOfOperation = symb.next(".").charAt(0);
+			if (symbolOfOperation == '+') {
+				System.out.println("Enter first Value: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Enter second Value: ");
+				secondArgs = symb2.nextInt();
+				System.out.println("Result: ");
+				System.out.println(firstArgs + "+" + secondArgs + " = " + (firstArgs + secondArgs));
 			}
+			if (symbolOfOperation == '-') {
+				System.out.println("Enter first Value: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Enter second Value: ");
+				secondArgs = symb2.nextInt();
+				System.out.println("Result: ");
+				System.out.println(firstArgs + "-" + secondArgs + " = " + (firstArgs - secondArgs));
+			}
+			if (symbolOfOperation == '*') {
+				System.out.println("Enter first Value: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Enter second Value: ");
+				secondArgs = symb2.nextInt();
+				System.out.println("Result: ");
+				System.out.println(firstArgs + "*" + secondArgs + " = " + (firstArgs * secondArgs));
+			}
+			if (symbolOfOperation == '/') {
+				System.out.println("Enter first Value: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Enter second Value: ");
+				secondArgs = symb2.nextInt();
+				System.out.println("Result: ");
+				System.out.println(firstArgs + "/" + secondArgs + " = " + (firstArgs / secondArgs));
+			}
+			if (symbolOfOperation == '%') {
+				System.out.println("Enter first Value: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Enter second Value: ");
+				secondArgs = symb2.nextInt();
+				System.out.println("Result: ");
+				System.out.println(firstArgs + "%" + secondArgs + " = " + (firstArgs % secondArgs));
+			}
+			if (symbolOfOperation == '#') {
+				System.out.println("Enter your Value: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Result: " + Math.abs(firstArgs));
+			}
+			if (symbolOfOperation == '$') {
+				System.out.println("Enter your summ: ");
+				firstArgs = symb1.nextInt();
+				System.out.println("Choise how match u will pay for :");
+				Payment();
+				System.out.println("Enter your Value: ");
+				secondArgs = symb1.nextInt();
+				System.out.println("Result: " + firstArgs + "+" + (firstArgs * (secondArgs / 100))+
+                               "="+((firstArgs * (secondArgs / 100))+firstArgs));
+			}
+		}
 
     }
 
     public static void MainMenu(){
-
          System.out.println("What can i do: ");
            String[] InstHelp =  {"1. Addition '+'.","2. Multiply '*' ",
                                   "3. Division '/'", "4. Subtract '-'", "5. Remainder '%'",
@@ -133,19 +132,14 @@ public class LessonFive {
 
         for (int MassCount =0; MassCount<InstHelp.length; MassCount++){
             System.out.println(InstHelp[MassCount]);
-		}
-
-
-
+	}
     }
+    
     public static void Payment(){
     String [] mass = { "terrible (0%)","poor (5%)","good (10%)","great (15%)","excellent (20%)" };
         for(int i=0; i<5; i++)
         System.out.println(mass[i]);
-
     }
-
-
 }
 
 
