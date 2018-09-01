@@ -17,30 +17,28 @@ public class LessonFour {
              if (FirstArg == 1) {
                  TaskOne(args[1], args[2], args[3]);
              }
-				if (FirstArg == 2) {
-					TaskTwo(args[1], args[2], args[3]);
-				}
-					if (FirstArg == 3) {
-						TaskThree(args[1], args[2], args[3]);
-					}
-						if (FirstArg == 4) {
-							TaskFour(args[1]);
-						}
-							if (FirstArg == 5) {
-								TaskFive(args[1], args[2]);
-							}
-								if (FirstArg == 6) {
-									TaskSix(args[1], args[2]);
-								}
-									if (FirstArg == 7) {
-										TaskSeven(args[1]);
-									}
-
+	     if (FirstArg == 2) {
+		TaskTwo(args[1], args[2], args[3]);
+	      }
+	     if (FirstArg == 3) {
+		TaskThree(args[1], args[2], args[3]);
+	      }
+	     if (FirstArg == 4) {
+		TaskFour(args[1]);
+	      }
+	     if (FirstArg == 5) {
+		TaskFive(args[1], args[2]);
+	     }
+	     if (FirstArg == 6) {
+		TaskSix(args[1], args[2]);
+	     }
+	    if (FirstArg == 7) {
+		TaskSeven(args[1]);
+	     }
     }
 
 
     public static void MainMenu() {
-
         System.out.println("1. Finde MinValue, press 1.");         //...
         System.out.println("2. Finde MinValue and MaxValue, press 2."); //...
         System.out.println("3. Finde one or few min values, press 3.");
@@ -58,7 +56,6 @@ public class LessonFour {
 
    public static void TaskTwo(String a, String b, String c) {
         int[] mass = {Integer.valueOf(a),Integer.valueOf(b), Integer.valueOf(c)};
-
         int min = mass[0];
         int max = mass[0];
 		
@@ -93,7 +90,6 @@ public class LessonFour {
 
     public static void TaskFour(String a) {
         int[] mass = {Integer.valueOf(a)};
-
         if (mass[0] % 2 == 0)
             System.out.println("Value " + mass[0] + " is even");
         else
@@ -103,7 +99,6 @@ public class LessonFour {
 
     public static void TaskFive(String a, String b) {
         int[] mass = {Integer.valueOf(a),Integer.valueOf(b)};
-
         if (mass[0] % mass[1] == 0)
             System.out.println("Result: " + mass[0] + "/" + mass[1] + "=" + mass[0] / mass[1]);
         else
@@ -117,20 +112,19 @@ public class LessonFour {
         ResTwo = 10 - mass[1];
         if (ResOne > ResTwo)
             System.out.println("FirstValue " + mass[0] + " is closer to 10 than SecondValue " + mass[1]);
-		else
-			System.out.println("SecondValue " + mass[1] + " is closer to 10 than FirstValue " + mass[0]);
+	else
+	System.out.println("SecondValue " + mass[1] + " is closer to 10 than FirstValue " + mass[0]);
     }
 
     public static void TaskSeven(String a) {
-
         int CostByOneDay = 40;
         int SevenValue = Integer.valueOf(a);
         if (SevenValue <= 5)
             System.out.println("You should to pay = " + CostByOneDay * SevenValue+"$");
-				if (SevenValue > 5 && SevenValue < 7)
-					System.out.println("You should to pay = " + (CostByOneDay * SevenValue - 20)+"$");
-						if (SevenValue > 7)
-							System.out.println("You should to pay = " + (SevenValue * CostByOneDay - 50)+"$");
+	if (SevenValue > 5 && SevenValue < 7)
+		System.out.println("You should to pay = " + (CostByOneDay * SevenValue - 20)+"$");
+	if (SevenValue > 7)
+		System.out.println("You should to pay = " + (SevenValue * CostByOneDay - 50)+"$");
 
     }
 
