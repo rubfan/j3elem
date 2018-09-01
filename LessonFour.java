@@ -10,31 +10,30 @@ import java.util.Scanner;
 public class LessonFour {
     public static void main(String[] args){
         int FirstArg=0;
-		MainMenu();
-       FirstArg=Integer.valueOf(args[0]);
-        
-
-             if (FirstArg == 1) {
-                 TaskOne(args[1], args[2], args[3]);
-             }
-	     if (FirstArg == 2) {
-		TaskTwo(args[1], args[2], args[3]);
-	      }
-	     if (FirstArg == 3) {
-		TaskThree(args[1], args[2], args[3]);
-	      }
-	     if (FirstArg == 4) {
-		TaskFour(args[1]);
-	      }
-	     if (FirstArg == 5) {
-		TaskFive(args[1], args[2]);
-	     }
-	     if (FirstArg == 6) {
+	MainMenu();
+        FirstArg=Integer.valueOf(args[0])
+		 
+	if (FirstArg == 1) {
+	   TaskOne(args[1], args[2], args[3]);
+	}
+	if (FirstArg == 2) {
+	   TaskTwo(args[1], args[2], args[3]);
+	}
+	if (FirstArg == 3) {
+	   TaskThree(args[1], args[2], args[3]);
+	}
+	if (FirstArg == 4) {
+	   TaskFour(args[1]);
+ 	 }
+	if (FirstArg == 5) {
+	   TaskFive(args[1], args[2]);
+	 }
+	if (FirstArg == 6) {
 		TaskSix(args[1], args[2]);
-	     }
-	    if (FirstArg == 7) {
+	}
+	if (FirstArg == 7) {
 		TaskSeven(args[1]);
-	     }
+	}
     }
 
 
