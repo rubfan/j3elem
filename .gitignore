@@ -1,0 +1,7 @@
+/out
+/docs
+*.class
+*.html
+*.js
+*.swp
+
