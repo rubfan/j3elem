@@ -42,7 +42,7 @@ public class Lesson5Homework {
         System.out.print("Input first operand: ");
         Scanner input = new Scanner(System.in);
         firstOperand = input.nextInt();
-        System.out.print("Input operation: ");
+        System.out.print("Input operation (+, -, *, /, %, abs): ");
         operation = input.next();
         if (!(operation.toLowerCase().trim().equals("abs"))) {
             System.out.print("Input second operand: ");
@@ -59,6 +59,10 @@ public class Lesson5Homework {
             case "/" :  if(secondOperand.equals(0))
                             System.out.println("Can not divide on zero");
                         else System.out.println("Result: " + ((float)firstOperand / secondOperand));
+                break;
+            case "%" :  if(secondOperand.equals(0))
+                            System.out.println("Can not divide on zero");
+                        else System.out.println("Result: " + ((float)firstOperand % secondOperand));
                 break;
             case "abs" :  System.out.println("Result: " + (Math.abs(firstOperand)));
                 break;
