@@ -6,7 +6,7 @@ public class lesson7 {
     public static void main(String[] args) {
 
         int type = 0;
-        int s;
+        int s,count;
         int[][] mas;
         Random r = new Random();
         while (type != 3) {
@@ -18,17 +18,10 @@ public class lesson7 {
             switch (type) {
 
                 case 1:
-                    mas = new int[10][10];
+                    mas = new int[15][15];
                     System.out.println("Array: ");
-                    setFirstRowArray(mas, r);
-                    setSecondRowArray(mas);
-                    for (int i = 0; i < mas.length; i++) {
-                        for (int j = 0; j < mas.length; j++) {
-                            System.out.print(mas[i][j] + "\t");
-                        }
-                        System.out.println();
-                    }
-                    System.out.println();
+                    count = setPascalArray(mas);
+                    printPascal(mas,count);
                     break;
 
                 case 2:
@@ -58,24 +51,43 @@ public class lesson7 {
         }
     }
 
-    static void setFirstRowArray(int[][] mas, Random r) {
+    static int setPascalArray(int[][] mas) {
 
-        mas[0][0] = 1;
-        mas[0][mas.length - 1] = 1;
-        for (int i = 1; i < mas.length - 1; i++) {
-            mas[0][i] = r.nextInt(10);
-        }
-    }
-
-    static void setSecondRowArray(int[][] mas) {
-
-        for (int j = 1; j < mas.length; j++) {
-            mas[j][0] = 1;
-            mas[j][mas.length - 1] = 1;
-            for (int i = 1; i < mas.length - 1; i++) {
-                mas[j][i] = mas[j - 1][i - 1] + mas[j - 1][i];
+        int n,j;
+        n = mas.length / 2;
+        for(int i = 0; i < n + 1; i++) {
+            mas[i][n - i] = mas[i][n + i] = 1;
+            if(i > 1) {
+                j = n - i + 2;
+                while( j <  n + i - 1) {
+                    mas[i][j] = mas[i - 1][j - 1] + mas[i - 1][j + 1];
+                    j += 2;
+                }
             }
         }
+        n++;
+
+        return n;
+    }
+
+    static void printPascal(int[][] mas, int count) {
+
+        for (int i = 0; i < count; i++) {
+            for (int j = 0; j < mas.length; j++) {
+                if(mas[i][j] > 0) {
+                    System.out.print(mas[i][j] + " ");
+                    if(String.valueOf(mas[i][j]).length() == 1) {
+                        System.out.print(" ");
+                    }
+                }
+                else
+                {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 
     static void setSpiralArray(int[][] mas) {
