@@ -54,20 +54,5 @@ public class Lesson6Homework {
             }
             System.out.println("");
         }
-
-
-
-
-        //        RowTasks.firstTask();
-//        RowTasks.secondTask();
-//        RowTasks.thirdTask();
-//        RowTasks.fourthTask();
-        ArrayTasks.nElementSum();
-        ArrayTasks.getMinAndMax();
-        ArrayTasks.oddAndEvenSum();
-        ArrayTasks.firstFiveMinElements();
-//        DigitsTasks.convertToBinary();
-//        DigitsTasks.taskEleven();
-//        DigitsTasks.luckyNumbers();
     }
 }
