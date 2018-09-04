@@ -3,27 +3,6 @@ import java.util.Scanner;
 public class Lesson5 {
     static Scanner num = new Scanner(System.in);
     private static int args0, args1;
-
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Calculator");
-        System.out.println();
-        System.out.println("Select an operation : ");
-        System.out.println("Multiplication '*' ");
-        System.out.println("Division '/' ");
-        System.out.println("Addition '+' ");
-        System.out.println("Subtraction '-' ");
-        System.out.println("Remainder Of Division '%' ");
-
-        setArgs0(args[0]);
-        setArgs1(args[1]);
-
-        char operator = scanner.next().charAt(0);
-        canculator(operator);
-
-    }
     public static void showChoose(){
         System.out.println("Select variables :");
         System.out.println();
@@ -31,7 +10,6 @@ public class Lesson5 {
         System.out.println("2. The first argument ");
         System.out.println("3. The second argument ");
     }
-
     public static void canculator(char operator) {
         switch (operator) {
             case '+':
@@ -43,7 +21,6 @@ public class Lesson5 {
                 int ch1 = number();
                 int value2 = argsOrInt(ch1);
                 System.out.println("Addition = " + addition(value1, value2));
-
                 break;
 
             case '*':
@@ -55,7 +32,6 @@ public class Lesson5 {
                 int mch1 = number();
                 int Mvalue2 = argsOrInt(mch1);
                 System.out.println("Multiplication = " + multiplication(Mvalue1, Mvalue2));
-
                 break;
 
             case '-':
@@ -67,7 +43,6 @@ public class Lesson5 {
                 int sch1 = number();
                 int Svalue2 = argsOrInt(sch1);
                 System.out.println("Subtraction = " + subtraction(Svalue1, Svalue2));
-
                 break;
 
             case '/':
@@ -79,7 +54,6 @@ public class Lesson5 {
                 int dch1 = number();
                 int Dvalue2 = argsOrInt(dch1);
                 System.out.println("Division = " + division(Dvalue1, Dvalue2));
-
                 break;
 
             case '%':
@@ -91,7 +65,6 @@ public class Lesson5 {
                 int rch1 = number();
                 int Rvalue2 = argsOrInt(rch1);
                 System.out.println("Remainder Of Division = " + remainderOfDivision(Rvalue1, Rvalue2));
-
                 break;
             default:
                 System.out.println("Invalid input");
@@ -115,31 +88,27 @@ public class Lesson5 {
         switch (service) {
             case 1:
                 System.out.println("You must give: " + percent0(fullamout));
-
                 break;
 
             case 2:
                 System.out.println("You must give: " +  percent5(fullamout));
-
                 break;
 
             case 3:
                 System.out.println("You must give: " +  percent10(fullamout));
-
                 break;
+
             case 4:
                 System.out.println("You must give: " + percent15(fullamout));
-
                 break;
 
             case 5:
                 System.out.println("You must give: " +percent20(fullamout));
-
                 break;
+
             default:
                 System.out.println("Invalid input");
         }
-
     }
     public static double percent0 (double a){
         double res = a * 0;
@@ -161,7 +130,6 @@ public class Lesson5 {
         double res = a * 0.2;
         return res;
     }
-
     public static int number(){
         int in = num.nextInt();
         return in;
@@ -189,7 +157,6 @@ public class Lesson5 {
                 return argsOrInt(ch);
         }
     }
-
     public static int addition(int v1, int v2) {
         int res = v1 + v2;
         return res;
@@ -210,7 +177,6 @@ public class Lesson5 {
         int res = v1 % v2;
         return res;
     }
-
     public static void setArgs0(String v1){
         args0 = Integer.parseInt(v1);
     }
