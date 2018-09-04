@@ -42,16 +42,19 @@ public class Main {
      * @param val3 = -10;
      * @return minimal value
      */
-    static String minValue(String val1, String val2, String val3) {
-        String resl = "";
-        if (Integer.valueOf(val1) <= Integer.valueOf(val2) && Integer.valueOf(val1) <= Integer.valueOf(val3)) {
-            resl = val1;
+    static int minValue(String val1, String val2, String val3) {
+        int va1 = Integer.valueOf(val1);
+        int va2 = Integer.valueOf(val2);
+        int va3 = Integer.valueOf(val3);
+        int resl = 0;
+        if (va1 <= va2 && va1 <= va2) {
+            resl = va1;
         }
-        if (Integer.valueOf(val2) <= Integer.valueOf(val1) && Integer.valueOf(val2) <= Integer.valueOf(val3)) {
-            resl = val2;
+        if (va2 <= va1 && va2 <= va3) {
+            resl = va2;
         }
-        if (Integer.valueOf(val3) <= Integer.valueOf(val1) && Integer.valueOf(val3) <= Integer.valueOf(val2)) {
-            resl = val3;
+        if (va3 <= va1 && va3 <= va2) {
+            resl = va3;
         }
         return resl;
     }
@@ -63,16 +66,19 @@ public class Main {
      * @param val3 = -10;
      * @return maximal value
      */
-    static String maxValue(String val1, String val2, String val3) {
-        String resl = "";
-        if (Integer.valueOf(val1) >= Integer.valueOf(val2) && Integer.valueOf(val1) >= Integer.valueOf(val3)) {
-            resl = val1;
+    static int maxValue(String val1, String val2, String val3) {
+        int va1 = Integer.valueOf(val1);
+        int va2 = Integer.valueOf(val2);
+        int va3 = Integer.valueOf(val3);
+        int resl = 0;
+        if (va1 >= va2 && va1 >= va2) {
+            resl = va1;
         }
-        if (Integer.valueOf(val2) >= Integer.valueOf(val1) && Integer.valueOf(val2) >= Integer.valueOf(val3)) {
-            resl = val2;
+        if (va2 >= va1 && va2 >= va3) {
+            resl = va2;
         }
-        if (Integer.valueOf(val3) >= Integer.valueOf(val1) && Integer.valueOf(val3) >= Integer.valueOf(val2)) {
-            resl = val3;
+        if (va3 >= va1 && va3 >= va2) {
+            resl = va3;
         }
         return resl;
     }
@@ -85,35 +91,38 @@ public class Main {
      * @return
      */
     static String repeatMinValue(String val1, String val2, String val3) {
+        int va1 = Integer.valueOf(val1);
+        int va2 = Integer.valueOf(val2);
+        int va3 = Integer.valueOf(val3);
         String resl = "";
         String rept = "";
-        if (Integer.valueOf(val1) <= Integer.valueOf(val2) && Integer.valueOf(val1) <= Integer.valueOf(val3)) {
+        if (va1 <= va2 && va1 <= va3) {
             //if the value is minimal
             resl = val1;
-            if (Integer.valueOf(val1) == Integer.valueOf(val2) || Integer.valueOf(val1) == Integer.valueOf(val3)) {
+            if (va1 == va2 || va1 == va3) {
                 //if the value meets once
                 rept = val1;
             }
-            if (Integer.valueOf(val1) == Integer.valueOf(val2) && Integer.valueOf(val1) == Integer.valueOf(val3)) {
+            if (va1 == va2 && va1 == va3) {
                 //if the value meets twice
                 rept = val1 + " " + val1;
             }
         }
-        if (Integer.valueOf(val2) <= Integer.valueOf(val1) && Integer.valueOf(val2) <= Integer.valueOf(val3)) {
+        if (va2 <= va1 && va2 <= va3) {
             resl = val2;
-            if (Integer.valueOf(val2) == Integer.valueOf(val1) || Integer.valueOf(val2) == Integer.valueOf(val3)) {
+            if (va2 == va1 || va2 == va3) {
                 rept = val2;
             }
-            if (Integer.valueOf(val2) == Integer.valueOf(val1) && Integer.valueOf(val2) == Integer.valueOf(val3)) {
+            if (va2 == va1 && va2 == va3) {
                 rept = val2 + " " + val2;
             }
         }
-        if (Integer.valueOf(val3) <= Integer.valueOf(val1) && Integer.valueOf(val3) <= Integer.valueOf(val2)) {
+        if (va3 <= va1 && va3 <= va2) {
             resl = val3;
-            if (Integer.valueOf(val3) == Integer.valueOf(val1) || Integer.valueOf(val3) == Integer.valueOf(val2)) {
+            if (va3 == va1 || va3 == va2) {
                 rept = val3;
             }
-            if (Integer.valueOf(val3) == Integer.valueOf(val1) && Integer.valueOf(val3) == Integer.valueOf(val2)) {
+            if (va3 == va1 && va3 == va2) {
                 rept = val3 + " " + val3;
             }
         }
@@ -127,7 +136,7 @@ public class Main {
      * @return
      */
     static String evenOrOdd(String val) {
-        String res = "";
+        String res;
         if ((Integer.valueOf(val) % 2) == 0) {
             res = "is even";
         } else {
@@ -187,14 +196,16 @@ public class Main {
     }
 
     /**
-     * This method define remainder after division 
+     * This method define remainder after division
      * @param val1
      * @param val2
      * @return
      */
     static String checkDivision(String val1, String val2) {
-        String resl = "";
-        if ((Integer.valueOf(val1) % Integer.valueOf(val2) == 0)) {
+        String resl;
+        int va1 = Integer.valueOf(val1);
+        int va2 = Integer.valueOf(val2);
+        if (va1 % va2 == 0) {
             resl = "At division is no remainder";
         } else {
             resl = "At division is a remainder";
