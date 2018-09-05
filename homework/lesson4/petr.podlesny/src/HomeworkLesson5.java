@@ -17,18 +17,23 @@ public class HomeworkLesson5 {
         System.out.println("Задача 1: ");
         switch (operation) {
             case "addition":
-                System.out.println("Addition = " + (firstOperand + secondOperand));
+                int sum = firstOperand + secondOperand;
+		System.out.println("Addition = " + sum);
             case "substraction":
-                System.out.println("Substraction = " + (firstOperand - secondOperand));
+                int differ = firstOperand - secondOperand;
+		System.out.println("Substraction = " + differ);
             case "multiplication":
-                System.out.println("Multiplication = " + (firstOperand * secondOperand));
+                int mult = firstOperand * secondOperand;
+		System.out.println("Multiplication = " + mult);
             case "division":
-                System.out.println("Division = " + ((double)firstOperand / secondOperand));
+		double div = firstOperand / secondOperand;
+                System.out.println("Division = " + div);
             case "absolute":
                 System.out.println("Absolute of: number 1: " + Math.abs(firstOperand) + ", number 2: " +
                     Math.abs(secondOperand));
             case "mod":
-                System.out.println("Mod = " + (firstOperand % secondOperand));
+		int mod = firstOperand % secondOperand;
+                System.out.println("Mod = " + mod);
         }
     }
 
@@ -43,23 +48,28 @@ public class HomeworkLesson5 {
         int secondOperand = scan.nextInt();
         switch (operation) {
             case "+":
-                System.out.println("Addition = " + (firstOperand + secondOperand));
+                int sum = firstOperand + secondOperand;
+		System.out.println("Addition = " + sum);
                 break;
             case "-":
-                System.out.println("Substraction = " + (firstOperand - secondOperand));
+		int differ = firstOperand - secondOperand;
+                System.out.println("Substraction = " + differ);
                 break;
             case "*":
-                System.out.println("Multiplication = " + (firstOperand * secondOperand));
+		int mult = firstOperand * secondOperand;
+                System.out.println("Multiplication = " + mult);
                 break;
             case "/":
-                System.out.println("Division = " + ((double)firstOperand / secondOperand));
+		double div = firstOperand / secondOperand;
+                System.out.println("Division = " + div);
                 break;
             case "absolute":
                 System.out.println("Absolute of: number 1 : " + Math.abs(firstOperand) + ", number 2:" +
                     Math.abs(secondOperand));
                 break;
             case "mod":
-                System.out.println("Mod = " + (firstOperand % secondOperand));
+		int mod = firstOperand % secondOperand;
+                System.out.println("Mod = " + mod);
         }
     }
 
@@ -71,23 +81,28 @@ public class HomeworkLesson5 {
         System.out.println("Задача 3: ");
         switch (operation) {
             case "+":
-                System.out.println("Addition = " + (firstOperand + secondOperand));
+		int sum = firstOperand + secondOperand;    
+                System.out.println("Addition = " + sum);
                 break;
             case "-":
-                System.out.println("Substraction = " + (firstOperand - secondOperand));
+		int differ = firstOperand - secondOperand;
+                System.out.println("Substraction = " + differ);
                 break;
             case "*":
-                System.out.println("Multiplication = " + (firstOperand * secondOperand));
+		int mult = firstOperand * secondOperand;
+                System.out.println("Multiplication = " + mult);
                 break;
             case "/":
-                System.out.println("Division = " + ((double)firstOperand / secondOperand));
+		double div = firstOperand / secondOperand;
+                System.out.println("Division = " + div);
                 break;
             case "absolute":
                 System.out.println("Absolute of: number 1: " + Math.abs(firstOperand) + ", number 2:" +
                     Math.abs(secondOperand));
                 break;
             case "mod":
-                System.out.println("Mod = " + (firstOperand % secondOperand));
+		int mod = firstOperand % secondOperand;
+                System.out.println("Mod = " + mod);
         }
     }
 
@@ -105,19 +120,24 @@ public class HomeworkLesson5 {
         int tipsForExcellent = 20;
         switch (serviceLevel) {
             case "terrible":
-                System.out.println("Tips amount is: " + (double)amount * tipsForTerrible / 100);
+		double tipsTerrible = amount * tipsForTerrible / 100;    
+                System.out.println("Tips amount is: " + tipsTerrible);
                 break;
             case "poor":
-                System.out.println("Tips amount is: " + (double)amount * tipsForPoor / 100);
+		double tipsPoor = amount * tipsForPoor / 100;
+                System.out.println("Tips amount is: " + tipsPoor);
                 break;
             case "good":
-                System.out.println("Tips amount is: " + (double)amount * tipsForGood / 100);
+		double tipsGood = amount * tipsForGood / 100;
+                System.out.println("Tips amount is: " + tipsGood);
                 break;
             case "great":
-                System.out.println("Tips amount is: " + (double)amount * tipsForGreat / 100);
+		double tipsGreat = amount * tipsForGreat / 100;
+                System.out.println("Tips amount is: " + tipsGreat);
                 break;
             case "excellent":
-                System.out.println("Tips amount is: " + (double)amount * tipsForExcellent / 100);
+		double tipsExcellent = amount * tipsForExcellent / 100;
+                System.out.println("Tips amount is: " + tipsExcellent);
                 break;
         }
     }
