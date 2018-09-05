@@ -48,7 +48,7 @@ public class Lesson6 {
 					break;
 
 				case "toOneDigit":
-					toOneDigit(Integer.parseInt(args[1]));
+					toOneDigit(args[1]);
 					break;
 
 				default:
@@ -335,12 +335,40 @@ public class Lesson6 {
 		}
 	}
 
-	private static void toOneDigit (int value) {
-		String valStr = Integer.toString(value);
-		while (valStr.length() > 1) {
+	private static void toOneDigit (String valueString) {
 
-	//		valStr.length()
+		int valueLength = valueString.length();
+
+		int value = 0;
+
+		while (valueLength > 1) {
+
+			for (int i = 0; i < valueLength; i++) {
+
+				int j = i+1;
+
+				int digit = Integer.parseInt(valueString.substring(i, j));
+
+				value = value + digit;
+
+				System.out.print(digit + " + ");
+
+			}
+			valueString = Integer.toString(value);
+
+			valueLength = valueString.length();
+
+			value = 0;
+
+			System.out.print("\b\b = ");
+
+		//	break a;
+			//		valStr.length()
 		}
+
+
+
+		System.out.println(Integer.parseInt(valueString.substring(0, 1)));
 
 	}
 
