@@ -345,7 +345,7 @@ public class Lesson6 {
 
 			for (int i = 0; i < valueLength; i++) {
 
-				int j = i+1;
+				int j = i + 1;
 
 				int digit = Integer.parseInt(valueString.substring(i, j));
 
@@ -362,10 +362,7 @@ public class Lesson6 {
 
 			System.out.print("\b\b = ");
 
-		//	break a;
-			//		valStr.length()
 		}
-
 
 
 		System.out.println(Integer.parseInt(valueString.substring(0, 1)));
