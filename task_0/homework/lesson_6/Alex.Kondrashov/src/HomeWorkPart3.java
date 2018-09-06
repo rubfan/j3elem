@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class HomeWorkPart3 {
     public static void main(String[] args) {
 
         sequenceFromTo(1000, 10000, 3);
