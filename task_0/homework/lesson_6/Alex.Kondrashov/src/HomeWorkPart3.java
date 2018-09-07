@@ -17,13 +17,13 @@ public class HomeWorkPart3 {
     }
 
 
-    static void sequenceFromTo(int startSequence, int endSequence, int stepSequence) {
+    private static void sequenceFromTo(int startSequence, int endSequence, int stepSequence) {
         for (int i = startSequence; i < endSequence; i += stepSequence) {
             System.out.println(i);
         }
     }
 
-    static void sequenceFirstNElements(int startSequence, int nElements, int stepSequence) {
+    private static void sequenceFirstNElements(int startSequence, int nElements, int stepSequence) {
         int arr[] = new int[nElements];
         int temp = startSequence;
         for (int i = 0; i <= nElements - 1; i++) {
@@ -33,13 +33,13 @@ public class HomeWorkPart3 {
         }
     }
 
-    static void nonNegativeSequence(int startSequence, int stepSequence) {
+    private static void nonNegativeSequence(int startSequence, int stepSequence) {
         for (int i = startSequence; i >= 0; i -= 5) {
             System.out.println(i);
         }
     }
 
-    static void sequenceFirstNElementsMultiply(int startSequence, int nElements, int stepSequence) {
+    private static void sequenceFirstNElementsMultiply(int startSequence, int nElements, int stepSequence) {
         int count = 1;
         int temp = startSequence;
         System.out.println("№" + count + " --> " + temp);
@@ -50,7 +50,7 @@ public class HomeWorkPart3 {
         }
     }
 
-    static void sumArray(int lengthArray) {
+    private static void sumArray(int lengthArray) {
         int arr[] = new int[lengthArray];
         int temp = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -61,7 +61,7 @@ public class HomeWorkPart3 {
         System.out.println("\nSum of the array is: " + temp);
     }
 
-    static void minAndMaxDigitArray(int lengthArray) {
+    private static void minAndMaxDigitArray(int lengthArray) {
         int arr[] = new int[lengthArray];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100);
@@ -83,7 +83,7 @@ public class HomeWorkPart3 {
         System.out.println("max value is: " + tempMax);
     }
 
-    static void sumArrayEvenAndNonEven(int lengthArray) {
+    private static void sumArrayEvenAndNonEven(int lengthArray) {
         int arr[] = new int[lengthArray];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10);
@@ -106,7 +106,7 @@ public class HomeWorkPart3 {
 
     }
 
-    static void happyTicket(int digitBegin, int digitEnd) {
+    private static void happyTicket(int digitBegin, int digitEnd) {
         int digit1;
         int digit2;
         int digit3;
@@ -133,12 +133,12 @@ public class HomeWorkPart3 {
         }
     }
 
-    static void convertToBinaryNumber(int digit) {
+    private static void convertToBinaryNumber(int digit) {
         String temp = Integer.toBinaryString(digit);
         System.out.println(temp);
     }
 
-    static void firstMinNElementsOfAray(int lengthArray, int NElements) {
+    private static void firstMinNElementsOfAray(int lengthArray, int NElements) {
         int arr[] = new int[lengthArray];
         System.out.println("Случайные числа: ");
         for (int i = 0; i < arr.length; i++) {
@@ -154,7 +154,7 @@ public class HomeWorkPart3 {
         }
     }
 
-    static void program555555(String digit) {
+    private static void program555555(String digit) {
         char arr[] = new char[digit.length()];
         arr = digit.toCharArray();
         int arrInt[] = new int[digit.length()];
