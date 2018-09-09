@@ -9,6 +9,7 @@ public class Main {
                 case "paskal":
                     paskalTriangle(Integer.parseInt(args[1]));
                     break;
+                    
                 case "spiral":
                     spiral(Integer.parseInt(args[1]));
                     break;
@@ -73,33 +74,47 @@ public class Main {
         int[][] masive = new int[number][number];
 
         int doX = 1;
+
         int doY = 0;
+
         int directionChange = 0;
+
         int steps = number;
 
         for (int i = 0; i < number * number; i++) {
+
             masive[line][col] = i + 1;
+
             if (--steps == 0) {
+
                 steps = number * (directionChange % 2) +
+
                         number * ((directionChange + 1) % 2) -
+
                         (directionChange / 2 - 1) - 2;
+
                 int temp = doX;
+
                 doX = -doY;
+
                 doY = temp;
+
                 directionChange++;
             }
             col += doX;
+
             line += doY;
         }
 
         for (int i = 0; i < number; i++) {
-            for (int j = 0; j < number; j++)
+
+            for (int j = 0; j < number; j++) {
+
                 System.out.print(masive[i][j] + "\t");
+
+            }
             System.out.println();
         }
-
-
-
 
 
     }
