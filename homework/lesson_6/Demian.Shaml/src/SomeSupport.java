@@ -149,7 +149,6 @@ public class SomeSupport {
                 }
             }
         }
-
         array = Arrays.copyOf(array, num);
         return array;
     }
@@ -164,7 +163,6 @@ public class SomeSupport {
             result = String.valueOf(res);
             length = result.length();
         }
-
         return res;
     }
 
