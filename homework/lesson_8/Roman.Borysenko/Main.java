@@ -9,11 +9,12 @@ public class Main {
 
         int sum,n,type = 0;
         int[] a, b, c;
-        while(type != 4) {
+        while(type != 5) {
             System.out.println("1. Time for operation sorting");
             System.out.println("2. Array copy");
             System.out.println("3. Get sum elements in array");
-            System.out.println("4. Exit");
+            System.out.println("4. Dificult of alhoritm");
+            System.out.println("5. Exit");
             type = new Scanner(System.in).nextInt();
             System.out.println();
             switch(type) {
@@ -43,7 +44,7 @@ public class Main {
                     printArray(c);
                     break;
 
-                 case 3:
+                case 3:
                     a = new int[]{1,3,5,7,9,11,13,18};
                     System.out.println("Array: ");
                     printArray(a);
@@ -55,6 +56,27 @@ public class Main {
                     break;
 
                 case 4:
+                    int dif = 2;
+                    int r = 0;
+                    int k =0;
+                    int y = 10;
+                    for(int i = 0; i < y; i++) {
+                        for(int j = i + 1; j < y; j++) {
+                            for(int z = j + 1; z < y; z++) {
+                                k++;
+                            }
+                            r = setPower(r,0);
+                        }
+                        r = setPower(r,1);
+                    }
+                    r = setPower(r,2);
+                    System.out.println("The result is " + k);
+                    System.out.println();
+                    System.out.println("Dificulty of alhoritm is  n ^ " + r + " = " + (int) Math.pow(y, r));
+                    System.out.println();
+                    break;
+
+                case 5:
                     return;
 
                 default:
@@ -65,6 +87,14 @@ public class Main {
         }
     }
 
+    static int setPower(int r, int f) {
+
+        if(r == f) {
+            r++;
+        }
+
+        return r;
+    }
     static void printArray(int[] a) {
 
         for(int i = 0; i < a.length; i++) {
@@ -90,8 +120,8 @@ public class Main {
         for(int i = 0; i < a.length - 1; i++) {
             for(int j = i + 1; j < a.length; j++) {
                 if(a[i] + a[j] == sum) {
-                System.out.println(a[i] + " + " + a[j] + " = " + sum + " : true");
-                return;
+                    System.out.println(a[i] + " + " + a[j] + " = " + sum + " : true");
+                    return;
                 }
             }
         }
