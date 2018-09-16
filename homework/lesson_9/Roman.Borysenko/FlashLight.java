@@ -3,7 +3,6 @@ public class FlashLight {
     private int battery;
     private String name;
 
-
     public FlashLight(int battery, String name) {
 
         this.name = name;
@@ -11,6 +10,7 @@ public class FlashLight {
     }
 
     public FlashLight() {
+
         battery = 3;
         name = "Test";
     }
@@ -18,6 +18,7 @@ public class FlashLight {
     public void setFunctionFlashLight(int function) {
 
         if (getFunctionFlashLight(function) == 1) {
+
             switch (function) {
 
                 case 1:
@@ -36,15 +37,14 @@ public class FlashLight {
         else {
             System.out.println("Not enough battery for this function");
         }
-
     }
 
     public int getFunctionFlashLight(int setbattery) {
 
         if(setbattery <= battery) {
-        return 1;
+            return 1;
         }
-        return 0;
+            return 0;
     }
 
     public void getInfo() {
