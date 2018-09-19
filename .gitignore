@@ -1,7 +1,11 @@
 /out
 /docs
+/.idea
+/idea
 *.class
 *.html
 *.js
 *.swp
-
+/.idea
+*.iml
+*.xml
