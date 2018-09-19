@@ -161,11 +161,9 @@ class OperationsWithArrays {
         String[] allTickets = new String[899999];
         String[] luckyTickets = new String[899999];
         int luckyCounter = 0;
-        for (int i = 0; i < allTickets.length; i++) {
-            allTickets[i] = Integer.toString(i + 100000);
-        }
 
         for (int i = 0; i < allTickets.length; i++) {
+            allTickets[i] = Integer.toString(i + 100000);
             Integer[] separated = separator(allTickets[i]);
             int firstThree = separated[0] + separated[1] + separated[2];
             int secondThree = separated[3] + separated[4] + separated[5];
@@ -175,9 +173,7 @@ class OperationsWithArrays {
             }
         }
 
-        for (int i = 0; i < luckyCounter; i++) {
-            System.out.println(luckyTickets[i]);
-        }
+        for (int i = 0; i < luckyCounter; i++) System.out.println(luckyTickets[i]);
     }
 
     private static Integer[] separator(String toSeparate) {
