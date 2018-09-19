@@ -18,8 +18,6 @@ public class Lesson5Homework {
                     break;
                 case "2" :    tipCalculator();
                     break;
-                default: System.out.println("Quality of service input error");
-                    break;
             }
             System.out.println("");
         }
