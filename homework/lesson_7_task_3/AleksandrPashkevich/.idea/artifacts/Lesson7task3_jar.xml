@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Lesson7task3.jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lesson7task3.jar</output-path>
+    <root id="archive" name="AleksandrPashkevich.jar">
+      <element id="module-output" name="AleksandrPashkevich" />
+    </root>
+  </artifact>
+</component>
