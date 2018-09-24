@@ -1,4 +1,4 @@
-//(n * (n-1) * (n-2)/3!
+//(n * (n-1) * (n-2)/3! = O(n^3)/3!
 
 public class Algorithm {
 
