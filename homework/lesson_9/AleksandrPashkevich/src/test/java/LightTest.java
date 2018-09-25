@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.Assert;
 
 public class LightTest {
 
@@ -8,60 +9,74 @@ public class LightTest {
     @Test
     public void glowWithWhiteTest() {
 
-        System.out.println("White: ");
-
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Battaryes:" + i + " ");
-            light.glowWithWhite(i);
-            light.battery = 0;
-        }
+        Assert.assertFalse(light.glowWithWhite(0));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithWhite(1));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithWhite(2));
+        light.battery = 0;
     }
 
     @Test
-
     public void glowWithRedTest() {
-        System.out.println("Red: ");
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Battaryes:" + i + " ");
-            light.glowWithRed(i);
-            light.battery = 0;
-        }
+        Assert.assertFalse(light.glowWithRed(0));
+        light.battery = 0;
+        Assert.assertFalse(light.glowWithRed(1));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithRed(2));
+        light.battery = 0;
+
     }
 
     @Test
     public void glowingWithFlashTest() {
 
-        System.out.println("Flash");
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Battaryes:" + i + " ");
-            light.glowingWithFlash(i);
-            light.battery = 0;
-        }
+        Assert.assertFalse(light.glowingWithFlash(0));
+        light.battery = 0;
+        Assert.assertFalse(light.glowingWithFlash(1));
+        light.battery = 0;
+        Assert.assertFalse(light.glowingWithFlash(2));
+        light.battery = 0;
+        Assert.assertTrue(light.glowingWithFlash(3));
+        light.battery = 0;
+        Assert.assertTrue(light.glowingWithFlash(4));
     }
 
     @Test
-
     public void glowWithGreenTest() {
 
-        System.out.println("Green: ");
-
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Battaryes:" + i + " ");
-            light.glowWithGreen(i);
-            light.battery = 0;
-        }
+        Assert.assertFalse(light.glowWithGreen(0));
+        light.battery = 0;
+        Assert.assertFalse(light.glowWithGreen(1));
+        light.battery = 0;
+        Assert.assertFalse(light.glowWithGreen(2));
+        light.battery = 0;
+        Assert.assertFalse(light.glowWithGreen(3));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithGreen(4));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithGreen(5));
+        light.battery = 0;
     }
 
     @Test
     public void glowWithYellowTest() {
 
-        System.out.println("Yellow: ");
+        boolean isYellow;
 
-        for (int i = 0; i < 7; i++) {
-            System.out.print("Battaryes:" + i + " ");
-            light.glowWithYellow(i);
-            light.battery = 0;
-        }
+        Assert.assertFalse(light.glowWithYellow(0));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithYellow(1));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithYellow(2));
+        light.battery = 0;
+        Assert.assertTrue(light.glowWithYellow(3));
+        light.battery = 0;
+        Assert.assertFalse(light.glowWithYellow(4));
+        light.battery = 0;
+        Assert.assertFalse(light.glowWithYellow(5));
+        light.battery = 0;
+
     }
 
 }
