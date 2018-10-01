@@ -52,7 +52,7 @@ public class ToyPlaneTest {
     public void warn(){
         tp.rechargeBat();
         tp.startMotor();
-        //for the test warning message should emulate low battery
+        //for the test warning message we should emulate low battery
         for(int i = 1; i < 80; i++) {
             tp.goFront();
         }

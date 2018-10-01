@@ -1,6 +1,5 @@
 package hillel;
 
-import hillel.Flashlight;
 import org.junit.Before;
 import org.junit.Test;
 
