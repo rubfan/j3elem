@@ -8,4 +8,9 @@
 *.swp
 /.idea
 *.iml
-*.xml
+compiler.xml
+workspace.xml
+vcs.xml
+misc.xml
+modules.xml
+project-template.xml
